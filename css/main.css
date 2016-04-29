@@ -17,15 +17,18 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
 }
 
 .header-logo {
   align-self: center;
+  border-radius: 50%;
+  width: 10%;
 }
 
 .header-name-block {
   align-self: center;
+  width: 75%;
+  text-align: right;
 }
 
 .name-block-name {
@@ -42,7 +45,8 @@ header {
 }
 
 .hero-image {
-  width: 100%
+  width: 100%;
+  max-height: 300px;
 }
 
 .featured-work {

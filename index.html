@@ -11,9 +11,10 @@
   </head>
   <body>
     <header>
-      <div class="header-logo">
-        <img src="http://placehold.it/100x100">
-      </div>
+
+        <img class="header-logo" src="img/head_shot-small.jpg">
+
+
       <div class="header-name-block">
         <h1 class="name-block-name">John Laine</h1>
         <h3 class="name-block-title">Front End Developer</h3>
@@ -21,7 +22,11 @@
     </header>
 
     <div class="hero">
-      <img class="hero-image" src="http://placehold.it/900x300">
+      <picture>
+        <source media="(min-width: 750px)" srcset="img/html_code-xlarge.jpg 2x, img/html_code-large.jpg">
+        <source media="(min-width: 500px)" srcset="img/html_code-medium.jpg">
+        <img class="hero-image" src="img/html_code-small.jpg">
+      </picture>
     </div>
 
     <section class="featured-work">
