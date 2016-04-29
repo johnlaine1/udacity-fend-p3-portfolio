@@ -1,0 +1,63 @@
+* {
+  border: 1px dashed red;
+}
+
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header-logo {
+  align-self: center;
+}
+
+.header-name-block {
+  align-self: center;
+}
+
+.name-block-name {
+
+}
+
+.name-block-title {
+
+}
+
+.hero {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hero-image {
+  width: 100%
+}
+
+.featured-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.featured-work-title {
+  width: 100%;
+}
+.featured-work-item {
+  text-align: center;
+}
+
+.project-title {
+  /*text-align: center;*/
+}
