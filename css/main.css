@@ -1,9 +1,10 @@
 * {
-  border: 1px dashed red;
+  /*border: 1px dashed red;*/
 }
 
 
 body {
+  font-family: 'Josefin Slab', serif;
   max-width: 960px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -14,6 +15,8 @@ header, nav, footer, section, article, div {
 }
 
 header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -22,21 +25,25 @@ header {
 .header-logo {
   align-self: center;
   border-radius: 50%;
-  width: 10%;
+  width: 13%;
+  margin-left: 10px;
 }
 
 .header-name-block {
   align-self: center;
   width: 75%;
   text-align: right;
+  text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .name-block-name {
-
+  margin-bottom: 0;
 }
 
 .name-block-title {
-
+  margin-top: 0;
+  font-size: .7em;
 }
 
 .hero {
@@ -47,6 +54,7 @@ header {
 .hero-image {
   width: 100%;
   max-height: 300px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .featured-work {
@@ -55,16 +63,21 @@ header {
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .featured-work-title {
   width: 100%;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 30px;
 }
+
 .featured-work-item {
   text-align: center;
-  max-width: 300px;
+  width: 100%;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .featured-work-item img {
@@ -75,9 +88,25 @@ header {
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
+  .featured-work-item {
+    width: 50%;
+  }
 
+  .header-name-block {
+    font-size: 1.4em;
+  }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
+  .featured-work-item {
+    width: 33.3333%;
+  }
 
+  .header-name-block {
+    font-size: 1.8em;
+  }
+
+  .header-logo {
+    width: 10%;
+  }
 }
