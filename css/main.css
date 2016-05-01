@@ -85,6 +85,16 @@ header {
   height: 200px;
 }
 
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-hr {
+  border: 3px solid #ccc;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
